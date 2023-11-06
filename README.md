@@ -8,6 +8,8 @@ I was inspired by the
 and so wrote my own, following the details in the
 [Kubelet Credential Provider API Documentation](https://kubernetes.io/docs/tasks/administer-cluster/kubelet-credential-provider/).
 
+_Skip to [Setting up the Credential Provider](#setting-up-the-credential-provider)_ | _Skip to [Issues, Feature Requests, Changes and Security Concerns](#issues-feature-requests-changes-and-security-concerns)_
+
 ## Setting up the Credential Provider
 
 The credential Provider requires several steps on your worker nodes to configure it for use.
@@ -105,9 +107,18 @@ error message.
 `generic-credential-provider` with the string `Credential request fulfilled for {DNSNAME}` or `Failed to
 fulfill credential request for {DNSNAME}`.
 
-## Issues, Feature Requests and Security Concerns
+## Issues, Feature Requests, Changes and Security Concerns
 
-If you have found an issue with this script or want a feature to be added, please use the issues
-tab above, however, if you've found a security concern, please contact
+If you have found an issue with this script or want a feature to be added, please use the
+[issues tab above](https://github.com/JonTheNiceGuy/generic-credential-provider/issues),
+however, if you've found a security concern, please contact
 [jon@sprig.gs](mailto:jon@sprig.gs?subject=generic-credential-provider%20Security%20Issue)
 directly.
+
+If you're looking to get involved in the project, and don't know what is of interest, please take a
+look at the issues tagged
+[Feature Request](https://github.com/JonTheNiceGuy/generic-credential-provider/issues?q=is%3Aissue+is%3Aopen+label%3A%22Feature+Request%22).
+If you've got an idea on something you want to add, please
+[raise an issue](https://github.com/JonTheNiceGuy/generic-credential-provider/issues) first, just
+to make sure it's in line with what the project wants. Oh, and if you spot a typo or small error,
+I'm happy to receive "drive-by" pull requests on those! :grin:

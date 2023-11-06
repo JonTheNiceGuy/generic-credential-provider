@@ -1,0 +1,5 @@
+{
+    "apiVersion": "credentialprovider.kubelet.k8s.io/v1",
+    "kind": "CredentialProviderRequest",
+    "image": "provider.example.org:5555/test:latest"
+}

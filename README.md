@@ -122,3 +122,9 @@ If you've got an idea on something you want to add, please
 [raise an issue](https://github.com/JonTheNiceGuy/generic-credential-provider/issues) first, just
 to make sure it's in line with what the project wants. Oh, and if you spot a typo or small error,
 I'm happy to receive "drive-by" pull requests on those! :grin:
+
+## Looking for alternatives?!
+
+OK, maybe Python isn't your language. Maybe Go is? If so, give [hegerdes/kubelet-static-credential-provider](https://github.com/hegerdes/kubelet-static-credential-provider) version by [Henrik Gerdes](https://github.com/hegerdes) a try instead. They also have a [pure bash+jq version](https://github.com/hegerdes/kubelet-static-credential-provider/blob/main/hack/static-credential-provider.sh) there too!
+
+If you're using AWS ECR, then [ECR Credential Provider](https://cloud-provider-aws.sigs.k8s.io/credential_provider/) (also linked above) is a much better option than trying to do something funky here!

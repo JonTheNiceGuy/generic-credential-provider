@@ -99,9 +99,9 @@ blank or omitted, it will return an empty string for the username or password.
 
 There are three tests we can do here;
 
-1. `echo '{"image":"registry.example.org/org/image:latest"}' | generic-credential-provider` should
+1. `echo '{"apiVersion":"credentialprovider.kubelet.k8s.io/v1","kind":"CredentialProviderRequest","image":"registry.example.org/org/image:latest"}' | generic-credential-provider` should
 return the authentication value.
-2. `echo '{"image":"not-here.tld/test:latest"} | generic-credential-provider` should return an
+2. `echo '{"apiVersion":"credentialprovider.kubelet.k8s.io/v1","kind":"CredentialProviderRequest","image":"not-here.tld/test:latest"} | generic-credential-provider` should return an
 error message.
 3. Provision a pod using the expected registry path, and check your syslog for a message from the
 `generic-credential-provider` with the string `Credential request fulfilled for {DNSNAME}` or `Failed to
